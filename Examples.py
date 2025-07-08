@@ -144,11 +144,6 @@ df_loss['Feature Dimension'] = df_loss['Feature Dimension'].astype(int)
 
 df_loss['Setting'] = 'n='+ df_loss['Sample Size'].astype(str) + ' \np=' + df_loss['Feature Dimension'].astype(str)
 
-palette_dict = {'COMSIR': '#d62728', 
-                'Individual': '#1f77b4', 
-                'Single': '#2ca02c' 
-                }
-
 g1 = sns.catplot(data=df_loss, x='Setting', y='value',
                   col='Example', 
                   col_wrap=2,
